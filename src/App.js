@@ -1,24 +1,23 @@
-import logo from './logo.svg';
+
+import { HashRouter, Routes, Route} from 'react-router-dom';
 import './App.css';
+import ScrollToTop from './Hooks/ScrollToTop';
+import Layout from './Components/Layout';
+import HomeList from './Components/Home/HomeList';
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    //Github Pages doesn't work well with BrowserRouter
+    <HashRouter>
+      <ScrollToTop>
+        <Routes>
+          <Route path = '/' element ={<Layout/>}>
+            <Route index element={<HomeList />} />
+            <Route path='Home/:id'element={<HomeList />} />
+          </Route>
+        </Routes>
+      </ScrollToTop>
+    </HashRouter>
   );
 }
 

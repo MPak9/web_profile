@@ -1,38 +1,64 @@
-.App {
-  text-align: center;
+.app-container {
+  background-color: aliceblue;
+  margin-left: 10%;
+  margin-right: 10%;
+  margin-top: 2.5%;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+/*
+----------------------Text Styles
+*/
+h1 {
+  font-size: 64px;
+  margin: 0 0 0 0;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+h2 {
+  font-size: 24px;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+h3 {
+  font-size: 34px;
+}
+
+h4 {
+  font-size: 24px;
+}
+
+/*
+-----------------------Double Layout 
+*/
+.double-container {
+  display: flex;
+  flex-direction: row;
+  height: 85vh;
+}
+.left-double-container {
+  flex-basis: 50%;
   display: flex;
   flex-direction: column;
-  align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
 }
 
-.App-link {
-  color: #61dafb;
+.right-double-container {
+  flex-basis: 50%;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+/*
+------------------------Header Styles---------------------------------------------------------------
+*/
+header {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+header > nav {
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content: space-between;
+}
+
+nav > span {
+  margin-left: 60%;
 }
