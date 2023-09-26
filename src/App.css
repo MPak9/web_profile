@@ -4,10 +4,11 @@
 }
 
 .app-container {
-  background-color: var(--col-background);
+  //background-color: var(--col-background);
   margin-left: 10%;
   margin-right: 10%;
   margin-top: 2.5%;
+  height: 90vh;
 }
 
 /*
@@ -32,24 +33,65 @@ h4 {
 }
 
 /*
+----------------------Cursor Interactions
+*/
+
+.clickable:hover {
+  cursor: pointer;
+}
+
+/*
+-----------------------List Item -------------------------------------------------------------------
+*/
+
+.list-item-grid {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+}
+
+.list-item-grid div {
+  aspect-ratio: 1 / 1;
+  border-radius: 0.5em;
+}
+
+/*
 ----------------------Filter List ---------------------------------------------------------------
 */
+
+.tag-filter-bar {
+  margin-bottom: 3%;
+}
+
 .tag-filter-bar span {
   margin-right: 3%;
   padding: 1% 3% 1% 3%;
   border-radius: 20px;
+}
+
+.tag-filter-bar span:hover {
+  cursor: pointer;
+}
+
+.active-tag {
   background-color: var(--col-accent);
+}
+.unactive-tag {
+  background-color: white;
+  color: gray;
 }
 
 .scrollable-container {
-  background-color: antiquewhite;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1em;
+  padding: 3% 3% 0% 0%;
 }
 
 @media (min-width: 600px) {
   /* portrait tablets, portrait iPad, e-readers (Nook/Kindle), landscape 800x480 phones (Android) */
   .scrollable-container {
     overflow-y: auto;
-    background-color: antiquewhite;
     padding-bottom: 20%;
     height: 50vh;
   }
@@ -67,7 +109,6 @@ h4 {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  padding-bottom: 10%;
   padding-top: 20%;
 }
 
@@ -83,7 +124,6 @@ h4 {
     overflow: hidden;
   }
   .left-double-container {
-    padding-bottom: 10%;
     padding-top: 0%;
   }
 }
