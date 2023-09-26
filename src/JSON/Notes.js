@@ -14,6 +14,6 @@ export const notes = [
         link:'',
         cover:'',
         color: 'aliceBlue'
-    },
+    }
 
 ]

@@ -16,11 +16,11 @@ const HomeList = () => {
         
         {id == 'Notes' 
           ?
-         <FilterList   id={id} listArray={notes} tags={note_tags}/> 
+         <FilterList id={id} listArray={notes} tags={note_tags}/> 
          : id == 'Projects' 
          ? 
-         <FilterList   id={id} listArray={projects} tags={project_tags} hideTitle={true} /> 
-         : <FilterList   id={id} listArray={projects} tags={project_tags} hideTitle={true} /> }
+         <FilterList  id={id} listArray={projects} tags={project_tags} hideTitle={true} /> 
+         : <FilterList  id={id} listArray={projects} tags={project_tags} hideTitle={true} /> }
     </DoubleLayout>
   )
 }

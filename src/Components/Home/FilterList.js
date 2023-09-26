@@ -7,6 +7,7 @@ React Component Filter Tag system for the list of projects and notes on the home
 const FilterList = ({id, listArray, tags, hideTitle}) => {
   const [filter, setFilter] = useState('All');
   
+  //Resets the Filter when the parameter ID changes
   useEffect(()=> {
     setFilter('All');
   },[id])

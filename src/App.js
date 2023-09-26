@@ -14,6 +14,7 @@ function App() {
           <Route path = '/' element ={<Layout/>}>
             <Route index element={<HomeList />} />
             <Route path='Home/:id'element={<HomeList />} />
+            <Route path='Project/:id' element={<div>Journal Project</div>}/>
           </Route>
         </Routes>
       </ScrollToTop>

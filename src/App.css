@@ -53,6 +53,17 @@ h4 {
 .list-item-grid div {
   aspect-ratio: 1 / 1;
   border-radius: 0.5em;
+  display: grid;
+}
+
+img {
+  display: block;
+  object-fit: contain;
+  width: 100%;
+}
+
+img:hover {
+  opacity: 10%;
 }
 
 /*
