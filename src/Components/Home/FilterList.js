@@ -5,8 +5,9 @@ import ListItem from './ListItem';
 React Component Filter Tag system for the list of projects and notes on the homepage
 */
 const FilterList = ({id, listArray, tags, hideTitle}) => {
-
   const [filter, setFilter] = useState('All');
+  
+  //Need to update the filter useState when switching between Note and Project
 
   return (
     <div>

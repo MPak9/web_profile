@@ -13,19 +13,23 @@ export const projects = [
     {
         name: 'Personal Profile',
         tag: [CSS, HTML, React_JS],
-        img:'',
+        cover:'',
+        link:'',
         color:'aliceBlue'
+        
     },
     {
         name: 'Toasty',
         tag: [CSS, HTML, React_JS],
-        img:'',
+        cover:'',
+        link:'',
         color:'#4682B4'
     },
     {
         name: 'GUSDA',
         tag: [SquareSpace],
-        img:'',
+        cover:'',
+        link:'',
         color:'#4B207F'
     }
 ]
