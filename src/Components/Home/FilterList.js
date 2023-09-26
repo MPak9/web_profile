@@ -1,4 +1,4 @@
-import React, { useState } from 'react'
+import React, { useEffect, useState } from 'react'
 import ListItem from './ListItem';
 
 /*
@@ -7,7 +7,9 @@ React Component Filter Tag system for the list of projects and notes on the home
 const FilterList = ({id, listArray, tags, hideTitle}) => {
   const [filter, setFilter] = useState('All');
   
-  //Need to update the filter useState when switching between Note and Project
+  useEffect(()=> {
+    setFilter('All');
+  },[id])
 
   return (
     <div>
