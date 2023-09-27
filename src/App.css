@@ -33,7 +33,15 @@ h4 {
 }
 
 /*
-----------------------Cursor Interactions
+---------------------Common Styles
+*/
+.flex-row-container {
+  display: flex;
+  flex-direction: column;
+}
+
+/*
+----------------------Cursor Interactions-------------------------------------------------------
 */
 
 .clickable:hover {
@@ -41,28 +49,65 @@ h4 {
 }
 
 /*
+-----------------------Journal Componenent---------------------------------------------------------
+*/
+.journal-container {
+  margin: 7% 7% 0% 7%;
+}
+
+.cover {
+  display: grid;
+}
+
+.cover img {
+  grid-row: 1;
+  grid-column: 1;
+  display: block;
+  border-radius: 0.5em;
+  object-fit: contain;
+  width: 100%;
+}
+
+/*
 -----------------------List Item -------------------------------------------------------------------
 */
 
-.list-item-grid {
+.list-item-flex {
   display: flex;
   flex-direction: column;
   text-align: center;
 }
 
-.list-item-grid div {
+.list-item-flex div {
   aspect-ratio: 1 / 1;
   border-radius: 0.5em;
   display: grid;
+  justify-content: center;
 }
 
-img {
+.list-item-flex img {
+  grid-row: 1;
+  grid-column: 1;
   display: block;
+  border-radius: 0.5em;
   object-fit: contain;
   width: 100%;
 }
 
-img:hover {
+.list-item-flex h5 {
+  grid-row: 1;
+  grid-column: 1;
+  color: white;
+  margin: 40% 0% 40% 0%;
+  align-items: center;
+  display: none;
+}
+
+.list-item-flex div:hover h5 {
+  display: block;
+}
+
+.list-item-flex img:hover {
   opacity: 10%;
 }
 
@@ -70,13 +115,16 @@ img:hover {
 ----------------------Filter List ---------------------------------------------------------------
 */
 
-.tag-filter-bar {
+.tag-filter-bar,
+.tag-bar {
   margin-bottom: 3%;
+  margin-top: 2%;
 }
 
-.tag-filter-bar span {
+.tag-filter-bar span,
+.tag-bar span {
   margin-right: 3%;
-  padding: 1% 3% 1% 3%;
+  padding: 0.5% 2.5% 0.5% 2.5%;
   border-radius: 20px;
 }
 

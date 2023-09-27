@@ -4,6 +4,7 @@ import './App.css';
 import ScrollToTop from './Hooks/ScrollToTop';
 import Layout from './Components/Layout';
 import HomeList from './Components/Home/HomeList';
+import Project_Toasty from './Components/Projects/Project_Toasty';
 
 function App() {
   return (
@@ -14,7 +15,7 @@ function App() {
           <Route path = '/' element ={<Layout/>}>
             <Route index element={<HomeList />} />
             <Route path='Home/:id'element={<HomeList />} />
-            <Route path='Project/:id' element={<div>Journal Project</div>}/>
+            <Route path='Project/Toasty' element={<Project_Toasty />}/>
           </Route>
         </Routes>
       </ScrollToTop>
