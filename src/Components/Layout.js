@@ -12,8 +12,9 @@ const Layout = () => {
         <header>
             <div>MP</div>
             <nav>
-                <span className='clickable' onClick={()=>{navigate('/Home/Projects')}} >Projects</span>
-                <span className='clickable' onClick={()=>{navigate('/Home/Notes')}}>Notes</span>
+              <span className='clickable' onClick={()=>{navigate('/Home/Notes')}}>Notes</span>
+              <span className='clickable' onClick={()=>{navigate('/Home/Projects')}} >Projects</span>
+  
             </nav>
         </header>
         <Outlet />

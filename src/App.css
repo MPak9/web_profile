@@ -40,8 +40,17 @@ h4 {
   margin-bottom: 8px;
 }
 
-p {
+p,
+summary,
+span {
   font-size: var(--fs-normal);
+}
+
+a {
+  font-size: var(--fs-normal);
+  margin: 3% 0% 2.5% 0%;
+  text-decoration: none;
+  color: black;
 }
 /*
 ---------------------Common Styles
@@ -64,6 +73,7 @@ p {
 */
 .journal-container {
   margin: 5% 10% 0% 10%;
+  padding-bottom: 10%;
 }
 
 .cover {
@@ -219,6 +229,6 @@ header > nav {
   justify-content: space-between;
 }
 
-nav > span {
+header > nav > span {
   margin-left: 60%;
 }
