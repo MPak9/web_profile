@@ -11,11 +11,12 @@ const Journal = ({id, subtitle, tags, cover, children}) => {
           {tags.map((tag)=><span className='active-tag' >{tag}</span>)}
         </div>
         <div className='cover'>
-            <img src={cover} />
+          <img src={cover} />       
+            
         </div>
-        <div className='flex-row-container'>
+        <body className='flex-row-container'>
             {children}
-        </div>
+        </body>
     </div>
   )
 }

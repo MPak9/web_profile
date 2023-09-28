@@ -1,6 +1,14 @@
 :root {
   --col-background: aliceblue;
   --col-accent: gray;
+
+  /*clamp: min limit, preferred, maximum limit */
+  --fs-Title: clamp(2.3rem, 5vw, 8rem);
+  --fs-Subtitle: clamp(1rem, 1.3vw, 2rem);
+  --fs-Section-Header: clamp(2rem, 3vw, 6rem);
+  --fs-Numbers: clamp(3rem, 5vw, 8rem);
+  --fs-Subsection-Header: clamp(1.5rem, 2vw, 3rem);
+  --fs-normal: clamp(1rem, 1.2vw, 2rem);
 }
 
 .app-container {
@@ -32,6 +40,9 @@ h4 {
   margin-bottom: 8px;
 }
 
+p {
+  font-size: var(--fs-normal);
+}
 /*
 ---------------------Common Styles
 */
@@ -52,11 +63,17 @@ h4 {
 -----------------------Journal Componenent---------------------------------------------------------
 */
 .journal-container {
-  margin: 7% 7% 0% 7%;
+  margin: 5% 10% 0% 10%;
 }
 
 .cover {
   display: grid;
+  margin-top: 5%;
+  margin-bottom: 5%;
+}
+
+.cover div {
+  margin: 5% 5% 5% 5%;
 }
 
 .cover img {

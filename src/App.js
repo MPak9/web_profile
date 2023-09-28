@@ -16,7 +16,10 @@ function App() {
             <Route index element={<HomeList />} />
             <Route path='Home/:id'element={<HomeList />} />
             <Route path='Project/Toasty' element={<Project_Toasty />}/>
+            <Route path="*" element={<div>404 Error</div>}/>
           </Route>
+          {/*Catch All Others */}
+          <Route path="*" element={<Layout><div>404 Error</div></Layout>}/>
         </Routes>
       </ScrollToTop>
     </HashRouter>
