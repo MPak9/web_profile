@@ -69,6 +69,32 @@ a {
 }
 
 /*
+-----------------------Journal Gallery------------------------------------------------------------
+*/
+/*Credit: https://www.w3schools.com/css/tryit.asp?filename=trycss3_flexbox_image_gallery */
+
+.journal-gallery {
+  columns: 2;
+  break-inside: avoid;
+  margin-left: 10px;
+  margin-right: 10px;
+  padding: 0;
+}
+
+.journal-gallery li {
+  list-style-type: none;
+}
+
+.journal-gallery img {
+  width: 100%;
+  display: block;
+  object-fit: cover;
+  margin-top: 0px;
+  margin-bottom: 20px;
+  border-radius: 0.5em;
+}
+
+/*
 -----------------------Journal Componenent---------------------------------------------------------
 */
 .journal-container {
