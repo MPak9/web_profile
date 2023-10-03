@@ -76,6 +76,7 @@ a {
 .journal-gallery {
   columns: 2;
   break-inside: avoid;
+  margin-top: 10%;
   margin-left: 10px;
   margin-right: 10px;
   padding: 0;

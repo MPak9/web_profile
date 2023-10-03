@@ -26,5 +26,10 @@ const Journal = ({id, subtitle, tags, cover, summary, children}) => {
 export default Journal
 
 Journal.defaultProps = {
-  tags:[]
+  id:'',
+  subtitle:'',
+  tags:[],
+  cover:'',
+  summary:'',
+  
 }
