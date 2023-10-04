@@ -10,9 +10,12 @@ const Journal = ({id, subtitle, tags, cover, summary, children}) => {
         <div className='tag-bar'>
           {tags.map((tag)=><span className='active-tag' >{tag}</span>)}
         </div>
-        <figure className='cover'>
-          <img src={cover} />           
-        </figure>
+        {cover != '' ? 
+          <figure className='cover'>
+            <img src={cover} />           
+          </figure>
+          :''
+        }
         <summary>
           {summary}
         </summary>

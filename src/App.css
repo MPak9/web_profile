@@ -46,6 +46,11 @@ span {
   font-size: var(--fs-normal);
 }
 
+.tag-filter-bar span,
+.tag-bar span {
+  font-size: smaller;
+}
+
 a {
   font-size: var(--fs-normal);
   margin: 3% 0% 2.5% 0%;
@@ -60,10 +65,35 @@ a {
   flex-direction: column;
 }
 
+.grid-container {
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  gap: 20px;
+}
+
+.tag-filter-bar span,
+.tag-bar span,
+.button {
+  margin-right: 3%;
+  padding: 0.5% 2.5% 0.5% 2.5%;
+  border-radius: 20px;
+}
+
+.button {
+  border: 1px solid black;
+  width: max-content;
+}
+
+.button:hover {
+  border: 1px solid red;
+  color: red;
+}
+
 /*
 ----------------------Cursor Interactions-------------------------------------------------------
 */
 
+.tag-filter-bar span:hover,
 .clickable:hover {
   cursor: pointer;
 }
@@ -110,7 +140,7 @@ a {
 }
 
 .cover div {
-  margin: 5% 5% 5% 5%;
+  margin: 5% 0% 5% 0%;
 }
 
 .cover img {
@@ -175,19 +205,9 @@ a {
   margin-top: 2%;
 }
 
-.tag-filter-bar span,
-.tag-bar span {
-  margin-right: 3%;
-  padding: 0.5% 2.5% 0.5% 2.5%;
-  border-radius: 20px;
-}
-
-.tag-filter-bar span:hover {
-  cursor: pointer;
-}
-
 .active-tag {
-  background-color: var(--col-accent);
+  background-color: black;
+  color: white;
 }
 .unactive-tag {
   background-color: white;

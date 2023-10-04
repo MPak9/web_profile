@@ -9,7 +9,7 @@ export const notes = [
     {
         name:'CSS Color Swatches',
         tag:[CSS],
-        link:'',
+        link:'/Notes/CssColors',
         cover:'',
         color: 'aliceBlue'
     }

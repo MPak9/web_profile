@@ -6,6 +6,7 @@ import Layout from './Components/Layout';
 import HomeList from './Components/Home/HomeList';
 import Project_Toasty from './Components/Projects/Project_Toasty';
 import Project_GUSDA from './Components/Projects/Project_GUSDA';
+import Notes_CSSColors from './Components/Notes/Notes_CSSColors';
 
 function App() {
   return (
@@ -18,6 +19,7 @@ function App() {
             <Route path='Home/:id'element={<HomeList />} />
             <Route path='Project/Toasty' element={<Project_Toasty />}/>
             <Route path='Project/GUSDA' element={<Project_GUSDA />}/>
+            <Route path='Notes/CssColors' element={<Notes_CSSColors />}/>
             <Route path="*" element={<div>404 Error</div>}/>
           </Route>
           {/*Catch All Others */}
