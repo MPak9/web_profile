@@ -13,10 +13,17 @@
 
 .app-container {
   //background-color: var(--col-background);
-  margin-left: 10%;
-  margin-right: 10%;
+  margin-left: 5%;
+  margin-right: 5%;
   margin-top: 2.5%;
   height: 90vh;
+}
+
+@media (min-width: 600px) {
+  .app-container {
+    margin-left: 10%;
+    margin-right: 10%;
+  }
 }
 
 /*
@@ -46,6 +53,10 @@ span {
   font-size: var(--fs-normal);
 }
 
+.footnotes {
+  color: gray;
+}
+
 .tag-filter-bar span,
 .tag-bar span {
   font-size: smaller;
@@ -57,18 +68,13 @@ a {
   text-decoration: none;
   color: black;
 }
+
 /*
 ---------------------Common Styles
 */
 .flex-row-container {
   display: flex;
   flex-direction: column;
-}
-
-.grid-container {
-  display: grid;
-  grid-template-columns: repeat(6, 1fr);
-  gap: 20px;
 }
 
 .tag-filter-bar span,
@@ -89,6 +95,10 @@ a {
   color: red;
 }
 
+hr {
+  margin-top: 10%;
+}
+
 /*
 ----------------------Cursor Interactions-------------------------------------------------------
 */
@@ -99,12 +109,28 @@ a {
 }
 
 /*
+------------------------- CSS Color Swatch -----------------------------------------------------
+*/
+.grid-container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+}
+
+@media (min-width: 600px) {
+  .grid-container {
+    grid-template-columns: repeat(6, 1fr);
+    gap: 20px;
+  }
+}
+
+/*
 -----------------------Journal Gallery------------------------------------------------------------
 */
 /*Credit: https://www.w3schools.com/css/tryit.asp?filename=trycss3_flexbox_image_gallery */
 
 .journal-gallery {
-  columns: 2;
+  columns: 1;
   break-inside: avoid;
   margin-top: 10%;
   margin-left: 10px;
@@ -123,6 +149,12 @@ a {
   margin-top: 0px;
   margin-bottom: 20px;
   border-radius: 0.5em;
+}
+
+@media (min-width: 600px) {
+  .journal-gallery {
+    columns: 2;
+  }
 }
 
 /*
@@ -150,6 +182,11 @@ a {
   border-radius: 0.5em;
   object-fit: contain;
   width: 100%;
+}
+
+figure {
+  padding: 0 0 0 0;
+  margin: 0 0 0 0;
 }
 
 /*
