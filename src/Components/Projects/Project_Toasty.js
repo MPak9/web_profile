@@ -14,6 +14,26 @@ const Project_Toasty = () => {
     'https://cdn.discordapp.com/attachments/1075543412582924378/1157056752848740372/image.png?ex=65173892&is=6515e712&hm=e7b7c38f36dd71def5d5b2249ae5db3d9682d751199bfc7ea2ad183d25fff10f&'
   ]
 
+  const footnotes = [
+    {
+      title:'CSS Grids for design ornamentation (Coming Soon)',
+      link:'',
+    },
+    {
+      title:'Toasty Bread Animation (Coming Soon)',
+      link:'',
+    },
+    {
+      title:'Responsive SVGS (Coming Soon)',
+      link:'',
+    },
+    {
+      title:'Dynamically Added Responsive Menu Items(Coming Soon)',
+      link:'',
+      
+    },
+  ]
+
 
   return (
     <Journal 
@@ -22,11 +42,14 @@ const Project_Toasty = () => {
         cover={'https://cdn.discordapp.com/attachments/1075543412582924378/1156707827927220324/image.png?ex=6515f39c&is=6514a21c&hm=7c0f51d963de7ce0b0a1940ccd0c60e6e816e3524bf8610d3246768c218dbaaf&'}
         tags={projects[1].tag}
         summary={
-          'Toasty is a personal project developed using React JS and vanilla CSS. The website is fully responsive and designed with the intention of being visually appealing with a wholesome charm. The primary goal was to create an attractive platform that communicates the story and value behind the Toasty brand, specifically its value proposition of providing healthy and fufilling sandwiches for busy individuals.'
+          'Toasty is a personal project developed using React JS and vanilla CSS. The website is fully responsive and designed with the intention of being visually appealing and having a wholesome charm. The primary goal was to create an attractive platform that communicates the story and value behind the Toasty brand, specifically its value proposition of providing healthy and fufilling sandwiches for busy individuals.'
         }
         href= "https://mpak9.github.io/toasty-sandwhich-website/"
         images={images}
+        footnoteTitle={'Documentation'}
+        footnotes={footnotes}
     >
+
     </Journal>
   )
 }

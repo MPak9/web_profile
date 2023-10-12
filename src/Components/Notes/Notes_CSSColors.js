@@ -1,7 +1,7 @@
 import React, { useState } from 'react'
 import Journal from '../Journal'
 import { notes } from '../../JSON/Notes'
-import { defaultColors } from '../../JSON/CSSColors'
+import { defaultColors, defaultColorsUsed } from '../../JSON/CSSColors'
 
 const Notes_CSSColors = () => {
   const[filteredColors, setFilteredColors] = useState(defaultColors);
@@ -23,12 +23,12 @@ const Notes_CSSColors = () => {
     } 
   }
 
-
   return (
     <Journal
         id={notes[0].name}
         subtitle={'Default CSS Colors'}
         summary={'A list of default css colors for reference'}
+        footnotes={defaultColorsUsed}
     >
       
       <div style={{marginTop:'5%'}}>

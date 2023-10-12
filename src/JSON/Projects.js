@@ -7,7 +7,7 @@ const Figma = 'Figma';
 const SquareSpace = 'SquareSpace';
 const All = 'All';
 
-export const project_tags = [CSS, HTML, React_JS,Figma, SquareSpace, All]
+export const project_tags = [CSS, HTML, Figma, SquareSpace, React_JS, All]
 
 export const projects = [
    

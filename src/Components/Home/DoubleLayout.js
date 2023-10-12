@@ -8,7 +8,7 @@ import { Outlet } from 'react-router-dom'
 const DoubleLayout = ({children}) => {
   return (
     <main className='double-container' >
-      <section className='left-double-container'>
+      <section className='left-double-container' style={{textAlign:'center'}}>
         <h1>Michelle Pak</h1>
         <h2>Designing web solutions with care</h2>
       </section>

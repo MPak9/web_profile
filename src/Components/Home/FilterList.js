@@ -1,11 +1,15 @@
 import React, { useEffect, useState } from 'react'
 import ListItem from './ListItem';
+import useWindowSize from './../../Hooks/useWindowSize'
+
 
 /*
 React Component Filter Tag system for the list of projects and notes on the homepage
 */
 const FilterList = ({id, listArray, tags, hideTitle}) => {
   const [filter, setFilter] = useState('All');
+  const{width} = useWindowSize();
+
   
   //Resets the Filter when the parameter ID changes
   useEffect(()=> {
@@ -14,7 +18,6 @@ const FilterList = ({id, listArray, tags, hideTitle}) => {
 
   return (
     <div>
-        <h4>{id == 'Notes' ? 'Topics' : id == 'Projects' ? 'Tools' : 'Tools' }</h4>
         <div className='tag-filter-bar'>
             {tags.map((tag)=><span className={tag == filter ? 'active-tag' : 'unactive-tag'} onClick={()=>{setFilter(tag)}}>{tag}</span>)}
         </div>

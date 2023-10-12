@@ -1,7 +1,21 @@
 import React from "react";
 
+export const defaultColorsUsed = [
+    {
+        title:'Toasty Web Project',
+        link:'/Project/Toasty',
+        colors:['aliceBlue', 'Orange', 'steelBlue', 'Wheat']
+    },
+    {
+        title:'Toasty Web Project',
+        link:'/Project/Toasty',
+        colors:['aliceBlue', 'Orange', 'steelBlue', 'Wheat']
+    },
+
+]
+
 export const defaultColors = [
-    {color:'AlicBlue', hex:'#F0F8FF', used:true, palette:'Toasty' }, 
+    {color:'AliceBlue', hex:'#F0F8FF', used:true, palette:'Toasty' }, 
     {color:'AntiqueWhite', hex:'#FAEBD7', used:false},
     {color: 'Aqua', hex:'#00FFFF', used:false},
     {color: 'Aquamarine', hex:'#7FFFD4', used:false},

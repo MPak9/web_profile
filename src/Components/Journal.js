@@ -1,7 +1,9 @@
 import React from 'react'
 import { Outlet, useParams } from 'react-router-dom'
+import { useNavigate } from 'react-router-dom'
 
-const Journal = ({id, subtitle, tags, cover, summary, children, href, images, footnotes}) => {
+const Journal = ({id, subtitle, tags, cover, summary, children, href, images, footnoteTitle, footnotes}) => {
+  let navigate = useNavigate();
 
   return (
     <section  className='journal-container'>
@@ -30,14 +32,19 @@ const Journal = ({id, subtitle, tags, cover, summary, children, href, images, fo
             </ul>
             :''
           }
+          
         </main>
         {
         footnotes[0] != '' ?
           <section>
             <hr/>
-            <p>Related Topics</p>
+            <p>{footnoteTitle}</p>
             <ol className='footnotes'>
-              {footnotes.map((note)=><li>{note}</li> )}
+              {footnotes.map((note)=><li className='clickable' onClick={()=>navigate(note.link)} >
+                {note.title}
+                <br/>
+                <sub>{note.description}</sub>
+                </li> )}
             </ol>
           </section>
         :''
@@ -58,6 +65,7 @@ Journal.defaultProps = {
   cover:'',
   summary:'',
   images:[''],
+  footnoteTitle:'Related Topics',
   footnotes:[''],
   href:''
   

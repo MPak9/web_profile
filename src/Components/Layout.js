@@ -10,7 +10,7 @@ const Layout = () => {
   return (
     <div className='app-container'>
         <header>
-            <div>MP</div>
+            <span>MP</span>
             <nav>
               <span className='clickable' onClick={()=>{navigate('/Home/Notes')}}>Notes</span>
               <span className='clickable' onClick={()=>{navigate('/Home/Projects')}} >Projects</span>
