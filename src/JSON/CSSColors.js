@@ -6,12 +6,6 @@ export const defaultColorsUsed = [
         link:'/Project/Toasty',
         colors:['aliceBlue', 'Orange', 'steelBlue', 'Wheat']
     },
-    {
-        title:'Toasty Web Project',
-        link:'/Project/Toasty',
-        colors:['aliceBlue', 'Orange', 'steelBlue', 'Wheat']
-    },
-
 ]
 
 export const defaultColors = [

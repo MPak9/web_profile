@@ -16,19 +16,19 @@ const Project_Toasty = () => {
 
   const footnotes = [
     {
-      title:'CSS Grids for design ornamentation (Coming Soon)',
+      title:'CSS Grid Tips for design ornamentation (Coming Soon)',
       link:'',
     },
     {
-      title:'Toasty Bread Animation (Coming Soon)',
+      title:'Toasty Project Bread Animation (Coming Soon)',
       link:'',
     },
     {
-      title:'Responsive SVGS (Coming Soon)',
+      title:'Responsive SVG (Coming Soon)',
       link:'',
     },
     {
-      title:'Dynamically Added Responsive Menu Items(Coming Soon)',
+      title:'Dynamically Added Responsive Menu (Coming Soon)',
       link:'',
       
     },
@@ -46,7 +46,7 @@ const Project_Toasty = () => {
         }
         href= "https://mpak9.github.io/toasty-sandwhich-website/"
         images={images}
-        footnoteTitle={'Documentation'}
+        footnoteTitle={'Project Documentation'}
         footnotes={footnotes}
     >
 
