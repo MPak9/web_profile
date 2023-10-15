@@ -10,7 +10,7 @@ const Project_GUSDA = () => {
         tags={projects[2].tag}
         summary={
           <summary>
-            Designed a website tailored to support the clients media outreach initiative, done in collaboration with a Graphic Designer.The clients mission was to create an inviting online space that reflects the warm and welcoming nature of their Christ-centered church. The website also serves as a valuable resource for current church members, keeping them informed about past, current, and upcoming church activities.To meet their vision, a simple and intuitive website design was implemented, featuring minimalistic accents. This approach ensured user-friendliness while reinforcing a personal and familiar ambiance, consistent with the churchs commitment to creating a welcoming atmosphere for all
+            Designed a website, done in collaboration with a Graphic Designer, to support the client's media outreach initiative. The client's mission was to create an online space that reflects the warm and welcoming nature of their Christ-centered church. The website also serves as a valuable resource for current church members keeping them informed about past, current, and upcoming church activities. Thus to meet their vision for ease of use for both older and younger members, a simple website design was implemented, featuring minimalistic accents. 
           </summary>}
         href={'https://www.gusda.org/'}
     >

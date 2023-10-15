@@ -14,9 +14,9 @@ export const projects = [
     {
         name: 'Personal Portfolio',
         tag: [CSS, HTML, React_JS, Figma],
-        cover:'',
-        link:'/Project/Personal-Portfolio',
-        color:'aliceBlue'
+        cover:'https://cdn.discordapp.com/attachments/1075543412582924378/1163195274680881193/image.png?ex=653eb104&is=652c3c04&hm=6d2786426d0b5fa415425cc4b1bf6216c58c0093aa9963fe1495c6d042c1696e&',
+        link:'/Project/Portfolio',
+        color:'black'
         
     },
     {
