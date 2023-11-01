@@ -9,7 +9,7 @@ const ListItem = ({item, hideTitle}) => {
     <div className='list-item-flex'>
         <div className='clickable' onClick={()=>{navigate(item.link)}} style={{backgroundColor:item.color}}>
             <img src={item.cover}/>  
-            <h5>{item.link == '' ? 'Coming Soon' : 'View'}</h5>        
+            <p>{item.link == '' ? 'Coming Soon' : 'View'}</p>        
         </div>
         {
             hideTitle ? '' : <p>{item.name}</p>

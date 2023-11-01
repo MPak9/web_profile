@@ -252,7 +252,8 @@ figure {
   width: 100%;
 }
 
-.list-item-flex h5 {
+.list-item-flex h5,
+.list-item-flex p {
   grid-row: 1;
   grid-column: 1;
   color: white;
@@ -261,7 +262,8 @@ figure {
   display: none;
 }
 
-.list-item-flex div:hover h5 {
+.list-item-flex div:hover h5,
+.list-item-flex div:hover p {
   display: block;
 }
 

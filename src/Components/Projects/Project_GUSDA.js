@@ -14,7 +14,13 @@ const Project_GUSDA = () => {
           </summary>}
         href={'https://www.gusda.org/'}
     >
-
+      <p>Color Palette</p>
+      <div style={{display:'flex', flexDirection:'row', minHeight:'10rem',  borderRadius:'5%'}}>
+        <div style={{flexBasis:'60%', background:'#4B207F', }}/>
+        <div style={{flexBasis:'5%', background:'#E6E4E8',}}/>
+        <div style={{flexBasis:'10%', background:'#101010',}}></div>
+        <div style={{flexBasis:'30%', background:'white',}}/>
+      </div>
     </Journal>
   )
 }

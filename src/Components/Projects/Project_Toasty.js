@@ -2,6 +2,7 @@ import React from 'react'
 import Journal from '../Journal'
 import { projects } from '../../JSON/Projects'
 import { useNavigate } from 'react-router-dom'
+import { defaultColorsUsed } from '../../JSON/CSSColors'
 
 const Project_Toasty = () => {
   let navigate = useNavigate();
@@ -53,7 +54,24 @@ const Project_Toasty = () => {
         images={images}
         footnoteTitle={'Project Documentation'}
         footnotes={footnotes}
-    >
+    >     
+      <br/>
+      <p>Color Palette</p>
+      <div style={{display:'flex', flexDirection:'row', minHeight:'10rem',  borderRadius:'5%'}}>
+        <div style={{flexBasis:'50%', background:'aliceBlue', }}>
+        
+        </div>
+        <div style={{flexBasis:'50%', background:'orange',}}>
+          
+        </div>
+        
+        <div style={{flexBasis:'20%', background:'wheat',}}>
+          
+        </div>
+        <div style={{flexBasis:'10%', background:'steelBlue', }}>
+        
+        </div>
+      </div>
 
     </Journal>
   )
