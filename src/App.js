@@ -22,6 +22,7 @@ function App() {
             <Route path='Project/GUSDA' element={<Project_GUSDA />}/>
             <Route path='Project/Portfolio' element={<Project_Portfolio />}/>
             <Route path='Notes/CssColors' element={<Notes_CSSColors />}/>
+            <Route path='ComingSoon' element={<div>Coming Soon</div>}/>
             <Route path="*" element={<div>404 Error</div>}/>
           </Route>
           {/*Catch All Others */}

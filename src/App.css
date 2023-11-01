@@ -63,13 +63,6 @@ span {
   font-size: var(--fs-normal);
 }
 
-.footnotes {
-  color: gray;
-}
-.footnotes li {
-  margin-bottom: 1%;
-}
-
 .tag-filter-bar span,
 .tag-bar span {
   font-size: smaller;
@@ -84,6 +77,14 @@ a {
 
 a:hover {
   color: var(--col-button);
+}
+
+.footnotes {
+  color: gray;
+}
+.footnotes li,
+.footnotes a {
+  margin-bottom: 1%;
 }
 
 /*
@@ -317,6 +318,15 @@ figure {
   gap: 2em;
 }
 
+.left-double-container {
+  display: flex;
+  flex-basis: 50%;
+  flex-direction: column;
+  justify-content: center;
+  //background-color: var(--col-background);
+  border-radius: 1em;
+}
+
 .right-double-container {
   flex-basis: 50%;
   margin-top: 10vh;
@@ -330,30 +340,24 @@ figure {
     overflow: hidden;
   }
   .left-double-container {
-    flex-basis: 50%;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
     padding-top: 0%;
+    margin: 2% 2% 2% 2%;
   }
 }
 
 @media (orientation: portrait) {
   .double-container {
     flex-direction: column;
+    gap: 2em;
   }
   .left-double-container {
-    flex-basis: 50%;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
     padding-top: 20%;
+    background-color: white;
   }
 
   .right-double-container {
     margin-top: 5vh;
     text-align: center;
-    align-items: center;
   }
 }
 

@@ -11,7 +11,6 @@ const Project_Toasty = () => {
     'https://cdn.discordapp.com/attachments/1075543412582924378/1157056346332614687/image.png?ex=65173832&is=6515e6b2&hm=bd95d4f3d4a4b7f349a62ac49123472bd690d1878aaa02134b3409278aa045cd&',
     'https://cdn.discordapp.com/attachments/1075543412582924378/1159164650299080865/image.png?ex=651ee3b4&is=651d9234&hm=c5c4c7ccf633881694536fef806c957081227d634cd796447c1af87f7a4209ae&',
     'https://cdn.discordapp.com/attachments/1075543412582924378/1157056607084105748/image.png?ex=65173870&is=6515e6f0&hm=f2a1d59b8d8d4a7dca84e1f31050b97500d9d2c6b35b8522abc7c0a176751a6a&',
-    'https://cdn.discordapp.com/attachments/1075543412582924378/1157056752848740372/image.png?ex=65173892&is=6515e712&hm=e7b7c38f36dd71def5d5b2249ae5db3d9682d751199bfc7ea2ad183d25fff10f&'
   ]
 
   const footnotes = [
@@ -30,6 +29,12 @@ const Project_Toasty = () => {
     {
       title:'Dynamically Added Responsive Menu (Coming Soon)',
       link:'',
+      
+    },
+    {
+      title:'Deploying Github Pages with create-react-app',
+      href:'https://www.pluralsight.com/guides/deploying-github-pages-with-create-react-app',
+      description: 'Thank you to Solomon Ayoola for this nifty piece of info'
       
     },
   ]

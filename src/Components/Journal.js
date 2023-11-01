@@ -40,11 +40,11 @@ const Journal = ({id, subtitle, tags, cover, summary, children, href, images, fo
             <hr/>
             <p>{footnoteTitle}</p>
             <ol className='footnotes'>
-              {footnotes.map((note)=><li className='clickable' onClick={()=>navigate(note.link)} >
+              {footnotes.map((note)=><li className='clickable' onClick={()=>navigate(note.link)}>
+                <a className='clickable' href= {note.href} target='blank'>
                 {note.title}
                 <br/>
-                <sub>{note.description}</sub>
-                </li> )}
+                <sub>{note.description}</sub></a></li>)}
             </ol>
           </section>
         :''
