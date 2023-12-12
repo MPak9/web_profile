@@ -13,7 +13,7 @@ const ListItem = ({item, hideTitle}) => {
         </div>
         {
             hideTitle ? '' : <p>{item.name}</p>
-        }
+        } 
         
     </div>
   )
