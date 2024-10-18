@@ -1,36 +1,49 @@
 import React from "react";
+import Gusda_Thumbnail from '../Images/GUSDA_Thumnail.png'
+import Toasty_Thumbnail from '../Images/ToastyThumbnail.png'
+import MP_Thumbnail from '../Images/MP_Cover.png'
+import Wrigley_Thumbnail from '../Images/Wrigley.png'
 
-const CSS = 'CSS';
-const HTML = 'HTML';
+const Featured = 'Featured';
+//const CSS = 'CSS';
+const HTML = 'HTML/CSS';
 const React_JS = 'React JS';
 const Figma = 'Figma';
 const SquareSpace = 'SquareSpace';
 const All = 'All';
 
-export const project_tags = [CSS, HTML, Figma, SquareSpace, React_JS, All]
+export const project_tags = [Featured, HTML, Figma, SquareSpace, React_JS, All]
 
 export const projects = [
    
     {
         name: 'Personal Portfolio',
         tag: [CSS, HTML, React_JS, Figma],
-        cover:'https://cdn.discordapp.com/attachments/1075543412582924378/1163195274680881193/image.png?ex=653eb104&is=652c3c04&hm=6d2786426d0b5fa415425cc4b1bf6216c58c0093aa9963fe1495c6d042c1696e&',
+        cover:MP_Thumbnail,
         link:'',
         color:'black'
         
     },
     {
-        name: 'Toasty Website',
-        tag: [CSS, HTML, React_JS, Figma],
-        cover:'https://cdn.discordapp.com/attachments/1075543412582924378/1156339438616596580/image.png?ex=65149c85&is=65134b05&hm=dbe378855a9454103c358cbaa8f58b5a20d8da821ddb7e5dfc209451e5182065&',
-        link:'/Project/Toasty',
-        color:'#4682B4'
+        name: 'Wrigley',
+        tag: [Featured, SquareSpace, Figma],
+        cover: Wrigley_Thumbnail,
+        link:'',
+        color:'black'
+        
     },
     {
         name: 'GUSDA Website',
-        tag: [SquareSpace],
-        cover:'https://cdn.discordapp.com/attachments/1075543412582924378/1156340193020874812/image.png?ex=65149d39&is=65134bb9&hm=55ad70b29474c8680daad81045206b75fbf22ddfcc2c015fac80f4e0a3746bd5&',
+        tag: [Featured, SquareSpace],
+        cover: Gusda_Thumbnail,
         link:'/Project/GUSDA',
         color:'#4B207F'
-    }
+    },
+    {
+        name: 'Toasty Website',
+        tag: [Featured, CSS, HTML, React_JS, Figma],
+        cover:Toasty_Thumbnail,
+        link:'/Project/Toasty',
+        color:'#4682B4'
+    },
 ]

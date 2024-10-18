@@ -275,6 +275,10 @@ figure {
 ----------------------Filter List ---------------------------------------------------------------
 */
 
+.tag-filter-bar span {
+  margin: 0;
+}
+
 .tag-filter-bar,
 .tag-bar {
   margin-bottom: 3%;

@@ -1,12 +1,13 @@
 import React from 'react'
 import Journal from '../Journal'
 import { projects } from '../../JSON/Projects'
+import GUSDA_Long_Cover from '../../Images/GUSDA_Long_Cover.png'
 
 const Project_GUSDA = () => {
   return (
     <Journal
         id={projects[2].name}
-        cover={'https://cdn.discordapp.com/attachments/1075543412582924378/1161409340478070835/image.png?ex=653831bc&is=6525bcbc&hm=057f7464a4681b75f12dfbc11c84fa283852cda0c93108f494daee8cf23cc6e1&'}
+        cover={GUSDA_Long_Cover}
         tags={projects[2].tag}
         summary={
           <summary>
