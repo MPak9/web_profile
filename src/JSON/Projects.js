@@ -28,7 +28,7 @@ export const projects = [
         name: 'Wrigley',
         tag: [Featured, SquareSpace, Figma],
         cover: Wrigley_Thumbnail,
-        link:'',
+        link:'/Project/Wrigley',
         color:'black'
         
     },

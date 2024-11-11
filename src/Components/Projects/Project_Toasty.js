@@ -44,7 +44,7 @@ const Project_Toasty = () => {
 
   return (
     <Journal 
-        id={projects[1].name}
+        id={projects[3].name}
         subtitle={'Web Development Project'}
         cover={Toasty_Cover}
         tags={projects[1].tag}
