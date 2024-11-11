@@ -1,19 +1,22 @@
 {
   "files": {
     "main.css": "/web_profile/static/css/main.69d3ba09.css",
-    "main.js": "/web_profile/static/js/main.998e5ad1.js",
+    "main.js": "/web_profile/static/js/main.10f8405e.js",
     "static/media/GUSDA_Long_Cover.png": "/web_profile/static/media/GUSDA_Long_Cover.e0c62417032f7643445c.png",
+    "static/media/Wrigley_Home_page.png": "/web_profile/static/media/Wrigley_Home_page.2d6bc57b4e068c93618f.png",
     "static/media/Toasty_Long_Cover.png": "/web_profile/static/media/Toasty_Long_Cover.71b847b286a33653b83e.png",
     "static/media/ToastyThumbnail.png": "/web_profile/static/media/ToastyThumbnail.b39c35553ce871f1cfbf.png",
+    "static/media/Wrigley_Services_Screenshot.png": "/web_profile/static/media/Wrigley_Services_Screenshot.4536b689e9e02c22fd38.png",
     "static/media/GUSDA_Thumnail.png": "/web_profile/static/media/GUSDA_Thumnail.db31cfc5aae98122d615.png",
     "static/media/Wrigley.png": "/web_profile/static/media/Wrigley.787af3055c521b340070.png",
+    "static/media/Wrigley_Long_Cover.png": "/web_profile/static/media/Wrigley_Long_Cover.6cd2e358e7576a9bfb06.png",
     "static/media/MP_Cover.png": "/web_profile/static/media/MP_Cover.bb75e43c2b515994663a.png",
     "index.html": "/web_profile/index.html",
     "main.69d3ba09.css.map": "/web_profile/static/css/main.69d3ba09.css.map",
-    "main.998e5ad1.js.map": "/web_profile/static/js/main.998e5ad1.js.map"
+    "main.10f8405e.js.map": "/web_profile/static/js/main.10f8405e.js.map"
   },
   "entrypoints": [
     "static/css/main.69d3ba09.css",
-    "static/js/main.998e5ad1.js"
+    "static/js/main.10f8405e.js"
   ]
 }
